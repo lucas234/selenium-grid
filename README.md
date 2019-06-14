@@ -17,6 +17,7 @@
 - [配置Java环境](https://blog.csdn.net/lb245557472/article/details/74625793)
 - 已安装需要运行的浏览器
 - 下载浏览器driver，放到和selenium server相同的路径下（[查看](https://www.seleniumhq.org/download/)）	，否则在启动node时要加参数，不然启动不了浏览器（`java -Dwebdriver.chrome.driver="C:\your path\chromedriver.exe"  -jar selenium-server-standalone-3.141.59.jar -role node -hub http://192.168.1.100:5566/grid/register/`，可切换浏览器）
+
 	|driver|link|comments|
 	|--|--|--|
 	|Firefox|[下载](https://github.com/mozilla/geckodriver/releases/tag/v0.24.0)|安装的浏览器要和下载的driver版本一致|
