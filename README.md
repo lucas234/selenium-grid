@@ -125,8 +125,11 @@ print dr.name
 
 	保存为`node_config.json`文件（注意将hub对应的值改为机器“Machine H”的IP），放在“Machine N”上和selenium server相同的路径下。（当多个node时需将该文件放在多个node机器上或者同一个机器上启动多个node）
 ###### Step 2
+
 hub机器上命令行运行：`java -jar selenium-server-standalone-3.141.59.jar -role hub -hubConfig hub_config.json`
+
 node机器上命令行运行：`java -jar selenium-server-standalone-3.141.59.jar -role node -nodeConfig node_config.json`
+
 运行之前的验证方法和脚本查看是否正确
 ##### （1、2）方式启动的挑战
 不易启动和维护：
