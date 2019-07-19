@@ -1,14 +1,14 @@
+# coding=utf-8
 from selenium import webdriver
 import time
 
-# dr = webdriver.Chrome(executable_path="./drivers/chromedriver.exe")
+dr = webdriver.Chrome(executable_path="./drivers/chromedriver.exe")
 # dr = webdriver.Firefox(executable_path="./drivers/geckodriver.exe")
 # dr = webdriver.Ie(executable_path="./drivers/IEDriverServer.exe")
-dr = webdriver.Edge(executable_path="./drivers/MicrosoftWebDriver.exe")
-print dr.name
-print dr.title
+# dr = webdriver.Edge(executable_path="./drivers/MicrosoftWebDriver.exe")
+print(dr.name)
+print(dr.title)
 dr.get('https://www.baidu.com/')
-dr.maximize_window()
 time.sleep(2)
 # open new window
 # JS1 = 'window.open("https://www.sogou.com");'
@@ -19,7 +19,7 @@ JS1 = "document.title='xxxxxx';"
 dr.execute_script(JS1)
 # popup title
 time.sleep(1)
-print dr.title
+print(dr.title)
 # JS2 = r"alert($(document).attr('title'));"
 # dr.execute_script(JS2)
 
